@@ -1,5 +1,5 @@
-@import "../style.css";
-@import "../root.css";
+@import "style.css";
+@import "root.css";
 
 section{
   scroll-behavior: smooth;
@@ -12,7 +12,7 @@ section{
 }
 
 .working-day {
-  display: block;
+  display: flex;
   width: 100%;
   height: 100%;
   margin: 50px;
@@ -29,7 +29,7 @@ section{
   font-weight: bolder;
 }
 .working-day table tr td{
-   
+   display: block;
   color: #fff;
   width: fit-content;
   font-size: 10px;
@@ -44,7 +44,7 @@ section{
 .working-day p {
   margin-left: 25%;
   margin-bottom: 17px;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: bolder;
   color: #fff;
 }
@@ -96,12 +96,15 @@ legend{
     margin: 0 auto;
     font-size: 30px;
     font-weight: bolder;
+    color: #777;
     padding: 10px;
     
 }
 fieldset{
-    padding: 10px;
-    border: 5 solid;
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-shadow:  0 0 10px 0px rgba(0,0,0,0.8);
 }
 .booking-details label {
   
@@ -109,16 +112,16 @@ fieldset{
   color: #000;
 }
 .booking-details form input {
-  width: 300px;
+  width: 250px;
   height: 30px;
   
-  border-radius: 20px;
+  border-radius: 30px;
   outline: none;
-  padding: 6px;
+  padding: 5px;
   margin-top: 10px;
 }
 .booking-details form input::placeholder {
-  font-size: 16px;
+  font-size: 12px;
   padding: 5px;
   margin-left: 6px;
 }
@@ -134,12 +137,13 @@ fieldset{
 }
 .booking-details form .dwn-btn{
     margin: 0 auto;
-    padding: 5px;
+    padding: 6px;
     border: none;
     outline: none;
     background: var(--color-blog);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
+    font-weight: 500;
 }
 .booking-details form select option{
     border-radius: 5px;
@@ -217,15 +221,23 @@ fieldset{
   }
 
   .avarage-time {
-    margin: 10px;
-    padding: 10px;
+    width: 350px;
+    margin: 3px;
+    padding: 3px;
     
+  }
+  .avarage-time .title{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .booking-details form  {
+    width: 355px;
+   
   }
 
   .booking-details form input {
-    width: 150px;
+    width: 200px;
     height: 20px;
-   
     border-radius: 20px;
     outline: none;
     padding: 6px;
@@ -276,12 +288,17 @@ fieldset{
   }
 
   .avarage-time {
-    margin: 10px;
-    padding: 10px;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
     
   }
   .booking-details{
     width: 300px;
+  }
+  .booking-details form  {
+    width: 280px;
+    
   }
   .booking-details form input {
     width: 150px;
@@ -293,8 +310,9 @@ fieldset{
     margin-top: 10px;
   }
   .booking-details form a img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    padding-right: 2px;
     margin: 0 auto;
   }
   .problem{
@@ -303,8 +321,8 @@ fieldset{
   }
   .problem a img{
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
   
   }
 
